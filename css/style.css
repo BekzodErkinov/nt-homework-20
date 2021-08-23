@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url(../img/wood-board-background.jpg);
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.caption{
+	font-family: 'Permanent Marker', Arial, sans-serif;
+	color: #faa703;
+	width: 330px;
+	padding: 10px;
+	margin: 20px auto;
+	border: 5px solid #000;
+	text-align: center;
+	text-transform: uppercase;
+	transform: rotateZ(-4deg);
+	background-color: #fff;
+}
+.caption:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -10px;
+	right: 2px;
+	border-radius: 50%;
+	background-color: #f00;
+	box-shadow: -3px 3px 10px 0 #000;
+}
+.caption:after{
+	content: '';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: -10px;
+	right: 4px;
+	border-radius: 50%;
+	background-color: #f00;
+	box-shadow: -3px 3px 10px 0 #000;
+}
+.list{
+	margin-top: 50px;
+	padding: 0 ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.item{
+	font-family: 'Indie Flower', cursive;
+	font-weight: 900;
+	padding: 15px 15px 25px;
+	margin: 0 20px 35px;
+	text-align: center;
+	list-style-type: none;
+	transform: rotateZ(3deg);
+	transition: transform .5s ease-out;
+	box-shadow: -3px 3px 10px 0 #000;
+	background-color: #fff;
+}
+.item:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -10px;
+	left: 50px;
+	border-radius: 50%;
+	background-color: #f00;
+	box-shadow: -3px 3px 10px 0 #000;
+}
+.item:after{
+	content: '';
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: -10px;
+	left: 58px;
+	border-radius: 50%;
+	background-color: #f00;
+	box-shadow: -3px 3px 10px 0 #000;
+}
+.item:hover{
+	z-index: 1;
+	transform: rotateZ(-3deg) /*scale(1.5)*/;
+}
+.item:hover img{
+	cursor: zoom-in;
+}
